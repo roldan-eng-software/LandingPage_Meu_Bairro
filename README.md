@@ -77,9 +77,10 @@ npm run dev
 
 ### Importante
 
-- O projeto está configurado para funcionar com o nome do repositório `LandingPage_Meu_Bairro`
-- Se mudar o nome do repositório, atualize a linha `base` no `vite.config.ts`
+- O projeto está configurado para usar a pasta `/docs` do GitHub Pages
+- O build usa paths relativos para compatibilidade com GitHub Pages
 - O routing client-side é tratado automaticamente pelo arquivo `404.html`
+- Para atualizar o site: `npm run build` e commit da pasta `docs/`
 
 ## Google Analytics
 
