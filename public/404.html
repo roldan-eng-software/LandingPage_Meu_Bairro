@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Bairro - Página Não Encontrada</title>
+  <script>
+    // GitHub Pages workaround for client-side routing
+    // This script redirects all 404s to the index.html
+    sessionStorage.redirect = location.pathname;
+    location.replace('/LandingPage_Meu_Bairro/' + (location.search || '') + (location.hash || ''));
+  </script>
+</head>
+<body>
+  <h1>Redirecionando...</h1>
+  <p>Se você não for redirecionado automaticamente, <a href="/LandingPage_Meu_Bairro/">clique aqui</a>.</p>
+</body>
+</html>

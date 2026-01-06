@@ -45,6 +45,41 @@ npm run dev
 - `npm run build:dev` - Build para desenvolvimento
 - `npm run lint` - Executa o ESLint
 - `npm run preview` - Preview do build de produção
+- `npm run deploy` - Build e deploy para GitHub Pages
+
+## Deploy no GitHub Pages
+
+### Pré-requisitos
+
+1. Ter o repositório no GitHub
+2. Ter o `gh-pages` instalado (já incluído nas devDependencies)
+
+### Passos para Deploy
+
+1. **Configure o repositório**:
+   ```sh
+   git remote add origin https://github.com/SEU_USERNAME/LandingPage_Meu_Bairro.git
+   ```
+
+2. **Faça o deploy**:
+   ```sh
+   npm run deploy
+   ```
+
+3. **Configure o GitHub Pages**:
+   - Vá para Settings > Pages do seu repositório
+   - Em "Build and deployment", selecione "Deploy from a branch"
+   - Escolha a branch `gh-pages` e a pasta `/ (root)`
+   - Clique em Save
+
+4. **Acesse seu site**:
+   Seu site estará disponível em `https://SEU_USERNAME.github.io/LandingPage_Meu_Bairro/`
+
+### Importante
+
+- O projeto está configurado para funcionar com o nome do repositório `LandingPage_Meu_Bairro`
+- Se mudar o nome do repositório, atualize a linha `base` no `vite.config.ts`
+- O routing client-side é tratado automaticamente pelo arquivo `404.html`
 
 ## Estrutura do Projeto
 
