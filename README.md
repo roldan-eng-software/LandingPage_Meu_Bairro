@@ -81,6 +81,48 @@ npm run dev
 - Se mudar o nome do repositório, atualize a linha `base` no `vite.config.ts`
 - O routing client-side é tratado automaticamente pelo arquivo `404.html`
 
+## Google Analytics
+
+O projeto está configurado com Google Analytics para monitoramento de tráfego e comportamento dos usuários.
+
+### Configuração
+
+- **Measurement ID**: `G-KPJY8VSLNB`
+- **Arquivo de configuração**: `index.html` (script global)
+- **Hook personalizado**: `src/hooks/useGoogleAnalytics.ts`
+- **Utilitários**: `src/utils/analytics.ts`
+
+### Como Usar
+
+```tsx
+import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
+import { analyticsEvents } from '@/utils/analytics';
+
+function MyComponent() {
+  const { trackEvent } = useGoogleAnalytics();
+
+  const handleClick = () => {
+    // Track custom event
+    analyticsEvents.buttonClick('CTA Button', 'Homepage');
+    
+    // Or use trackEvent directly
+    trackEvent('custom_action', 'Custom Category', 'Custom Label');
+  };
+
+  return <button onClick={handleClick}>Click me</button>;
+}
+```
+
+### Eventos Disponíveis
+
+- Page views (automáticos)
+- Button clicks
+- Form submissions
+- Search queries
+- User registration/login
+- Performance metrics
+- Error tracking
+
 ## Estrutura do Projeto
 
 ```
