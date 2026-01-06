@@ -167,6 +167,36 @@
             border-radius: 10px;
         }
         
+        .feature-professional {
+            border: 2px solid #3498db;
+            background: #f0f8ff;
+            position: relative;
+        }
+        
+        .feature-professional::before {
+            content: "🎯 MAIS POPULAR";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .trial-highlight {
+            background: #e8f5e8;
+            color: #d63031;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 0;
+            border: 1px solid #f39c12;
+        }
+        
         .feature h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -241,16 +271,16 @@
                     </ul>
                 </div>
                 
-                <div class="feature">
+                <div class="feature feature-professional">
                     <h3>💎 Profissional</h3>
                     <p>Para negócios em crescimento</p>
                     <p style="font-size: 2rem; font-weight: bold; color: #e74c3c; margin: 1rem 0;">R$ 49,90/mês</p>
+                    <div class="trial-highlight">✅ 30 dias grátis para teste</div>
                     <ul style="list-style: none; padding: 0;">
                         <li>✅ Tudo do Básico</li>
                         <li>✅ Destaque em buscas</li>
                         <li>✅ Estatísticas</li>
                         <li>✅ Promoções</li>
-                        <li>✅ 30 dias grátis para teste</li>
                     </ul>
                 </div>
                 
