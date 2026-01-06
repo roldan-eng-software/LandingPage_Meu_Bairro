@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bairro</title>
+    <meta name="description" content="Plataforma de conexão comunitária do seu bairro" />
+    <meta name="author" content="Meu Bairro Team" />
+
+    <!-- TODO: Update og:title to match your application name -->
+    <meta property="og:title" content="Meu Bairro" />
+    <meta property="og:description" content="Plataforma de conexão comunitária do seu bairro" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPJY8VSLNB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KPJY8VSLNB');
+    </script>
+    
+    <!-- Fallback para paths absolutos -->
+    <script>
+      // Detectar se estamos no GitHub Pages e ajustar paths
+      if (window.location.hostname.includes('github.io')) {
+        // Criar URLs absolutas para assets
+        const baseUrl = window.location.pathname.replace(/\/[^\/]*$/, '/');
+        document.write('<link rel="stylesheet" crossorigin href="' + baseUrl + 'assets/index-CAeyOFr1.css">');
+      } else {
+        document.write('<link rel="stylesheet" crossorigin href="./assets/index-CAeyOFr1.css">');
+      }
+    </script>
+    
+    <noscript>
+      <link rel="stylesheet" crossorigin href="./assets/index-CAeyOFr1.css">
+    </noscript>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      // Carregar JavaScript com path correto
+      if (window.location.hostname.includes('github.io')) {
+        const baseUrl = window.location.pathname.replace(/\/[^\/]*$/, '/');
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.crossOrigin = 'anonymous';
+        script.src = baseUrl + 'assets/index-nubPCCF2.js';
+        document.body.appendChild(script);
+      } else {
+        // Fallback para desenvolvimento local
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.crossOrigin = 'anonymous';
+        script.src = './assets/index-nubPCCF2.js';
+        document.body.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
