@@ -16,12 +16,16 @@ const CTA = () => {
         </div>
         
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-          Seja o primeiro do seu ramo no bairro!
+          Comece hoje.
         </h2>
         
-        <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-          Quanto mais cedo você começar, mais tempo terá de vantagem sobre a concorrência. 
-          Não deixe os clientes do seu bairro irem para outro lugar.
+        <p className="text-primary-foreground/80 text-lg mb-4 max-w-2xl mx-auto">
+          Seus clientes ideais estão procurando alguém exatamente como você, 
+          neste exato momento, no seu bairro.
+        </p>
+        
+        <p className="text-primary-foreground/80 text-xl font-semibold mb-8">
+          Não deixe para amanhã.
         </p>
         
         <Button 
@@ -31,7 +35,7 @@ const CTA = () => {
           className="text-lg px-8 py-6 gap-2"
         >
           <MessageCircle className="w-5 h-5" />
-          Falar no WhatsApp
+          Aparecer Para Meus Vizinhos
         </Button>
         
         <p className="text-primary-foreground/60 text-sm mt-4">

@@ -6,7 +6,7 @@ const plans = [
   {
     name: "Básico",
     price: "29",
-    description: "Ideal para começar a aparecer no bairro",
+    description: "Perfeito para quem está começando e quer testar",
     features: [
       "Cadastro completo do negócio",
       "1 foto do estabelecimento",
@@ -20,7 +20,7 @@ const plans = [
   {
     name: "Destaque",
     price: "59",
-    description: "Para quem quer se destacar da concorrência",
+    description: "O mais escolhido - Melhor custo-benefício",
     features: [
       "Tudo do plano Básico",
       "Aparece primeiro nas buscas",
@@ -34,7 +34,7 @@ const plans = [
   {
     name: "Premium",
     price: "99",
-    description: "Máxima visibilidade para seu negócio",
+    description: "Para quem quer dominar o bairro",
     features: [
       "Tudo do plano Destaque",
       "Banner exclusivo na home",
@@ -107,7 +107,7 @@ const Pricing = () => {
                   variant={plan.popular ? "default" : "outline"}
                   onClick={() => handleWhatsApp(plan.name)}
                 >
-                  Quero este plano
+                  Ativar Meu Comércio Agora
                 </Button>
               </CardContent>
             </Card>
