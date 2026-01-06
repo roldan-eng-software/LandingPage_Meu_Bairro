@@ -30,9 +30,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-and-deploy:
@@ -55,7 +55,7 @@ jobs:
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs
@@ -71,7 +71,7 @@ jobs:
 
 ### 404 Errors
 - Ensure the base path in `vite.config.ts` matches your repository name
-- Check that GitHub Pages is configured to deploy from the `gh-pages` branch
+- Check that GitHub Pages is configured to deploy from the `master` branch with `/docs` folder
 
 ### Assets Not Loading
 - Verify the `base` configuration in `vite.config.ts`
