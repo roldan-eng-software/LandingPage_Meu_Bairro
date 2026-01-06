@@ -69,7 +69,7 @@ npm run dev
 3. **Configure o GitHub Pages**:
    - Vá para Settings > Pages do seu repositório
    - Em "Build and deployment", selecione "Deploy from a branch"
-   - Escolha a branch `gh-pages` e a pasta `/ (root)`
+   - Escolha a branch `main` (ou master) e a pasta `/docs`
    - Clique em Save
 
 4. **Acesse seu site**:
