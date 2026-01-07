@@ -169,7 +169,7 @@ const HomePage = () => {
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Listagem no bairro</li>
-                    <li>✓ Até 5 fotos</li>
+                    <li>✓ 1 foto</li>
                     <li>✓ Contato direto</li>
                     <li>✓ Suporte por email</li>
                   </ul>
