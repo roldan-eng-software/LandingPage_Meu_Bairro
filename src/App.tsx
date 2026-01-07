@@ -208,6 +208,7 @@ const HomePage = () => {
                     <li>✓ Destaque em buscas</li>
                     <li>✓ Estatísticas simples</li>
                     <li>✓ Suporte prioritário</li>
+                    <li>✓ 30 dias Grátis</li>
                   </ul>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
                     <a 
@@ -231,10 +232,11 @@ const HomePage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 79,90</div>
+                  <div className="text-3xl font-bold text-gray-900">R$ 89,90</div>
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Intermediário</li>
+                    <li>✓ 5 Fotos</li>
                     <li>✓ Página da internet grátis (LandingPage)</li>
                     <li>✓ Gerente dedicado</li>
                     <li>✓ Sem concorrentes próximos</li>
