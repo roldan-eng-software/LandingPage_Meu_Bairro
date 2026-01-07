@@ -461,6 +461,37 @@ const HomePage = () => {
             </div>
           </section>
           
+          {/* Seção 10 - Incentivo Final */}
+          <section className="mb-16">
+            <Card className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+              <CardContent className="text-center py-16">
+                <div className="max-w-4xl mx-auto">
+                  <h2 className="text-4xl font-bold mb-6">
+                    Comece hoje.
+                  </h2>
+                  <p className="text-xl mb-8 leading-relaxed">
+                    Seus clientes ideais estão procurando alguém exatamente como você, 
+                    neste exato momento, no seu bairro.
+                  </p>
+                  <p className="text-2xl font-bold mb-8">
+                    Não deixe para amanhã.
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 text-lg font-semibold"
+                    asChild
+                    onClick={handleButtonClick}
+                  >
+                    <Link to="/sobre">Aparecer Para Meus Vizinhos Agora</Link>
+                  </Button>
+                  <p className="text-sm mt-6 opacity-90">
+                    Última chance: 30 dias grátis termina em breve
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
