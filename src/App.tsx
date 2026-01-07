@@ -204,8 +204,8 @@ const HomePage = () => {
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Básico</li>
-                    <li>✓ Fotos ilimitadas</li>
-                    <li>✓ Destaque em busca</li>
+                    <li>✓ 3 fotos</li>
+                    <li>✓ Destaque em buscas</li>
                     <li>✓ Estatísticas simples</li>
                     <li>✓ Suporte prioritário</li>
                   </ul>
