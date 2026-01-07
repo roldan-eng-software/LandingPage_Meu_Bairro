@@ -2,12 +2,12 @@ import React from 'react';
 import './index.css';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Toaster } from '@/components/ui/toaster';
-import { Toaster as Sonner } from '@/components/ui/sonner';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useGoogleAnalytics } from "@/hooks/useGoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -20,10 +20,6 @@ const HomePage = () => {
 
   const whatsappNumber = '16981442301';
   const platformUrl = 'https://micro-saa-s-meu-bairro.vercel.app/';
-  
-  // Import assets dinamicamente
-  const logoImage = './Logotipo_Meu_Bairro.png';
-  const backgroundImage = './Fundo_Meu_Bairro.png';
   
   // Mensagens personalizadas para cada plano
   const basicPlanMessage = 'Olá! Quero adquirir o Plano Básico por R$ 19,90. Me envie mais informações?';
@@ -56,13 +52,9 @@ const HomePage = () => {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-10">
             <img 
-              src={backgroundImage} 
+              src="./Fundo_Meu_Bairro.png" 
               alt="Background" 
               className="w-full h-full object-cover"
-              onError={(e) => {
-                console.error('Background failed to load:', backgroundImage);
-                (e.target as HTMLImageElement).style.display = 'none';
-              }}
             />
           </div>
           
@@ -71,13 +63,9 @@ const HomePage = () => {
             {/* Logo */}
             <div className="mb-8">
               <img 
-                src={logoImage} 
+                src="./Logotipo_Meu_Bairro.png" 
                 alt="Meu Bairro Logo" 
                 className="w-32 h-32 mx-auto object-contain"
-                onError={(e) => {
-                  console.error('Logo failed to load:', logoImage);
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
               />
             </div>
             
