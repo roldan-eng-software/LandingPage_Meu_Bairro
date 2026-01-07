@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const App = () => {
   return (
@@ -11,30 +13,46 @@ const App = () => {
         </header>
         
         <main className="max-w-4xl mx-auto">
-          <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Bem-vindo!</h2>
-            <p className="text-gray-700 mb-4">
-              Conecte-se com seus vizinhos, descubra eventos locais e participe da comunidade.
-            </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Começar Agora
-            </button>
-          </section>
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="text-2xl">Bem-vindo!</CardTitle>
+              <CardDescription>
+                Conecte-se com seus vizinhos, descubra eventos locais e participe da comunidade.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button size="lg" className="w-full sm:w-auto">
+                Começar Agora
+              </Button>
+            </CardContent>
+          </Card>
           
-          <section className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold mb-2">Eventos</h3>
-              <p className="text-gray-600">Fique por dentro dos acontecimentos do seu bairro.</p>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold mb-2">Comércio Local</h3>
-              <p className="text-gray-600">Apoie os negócios da sua comunidade.</p>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-lg font-semibold mb-2">Serviços</h3>
-              <p className="text-gray-600">Encontre serviços próximos de você.</p>
-            </div>
-          </section>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Eventos</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Fique por dentro dos acontecimentos do seu bairro.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Comércio Local</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Apoie os negócios da sua comunidade.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Serviços</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Encontre serviços próximos de você.</p>
+              </CardContent>
+            </Card>
+          </div>
         </main>
       </div>
     </div>
