@@ -165,7 +165,7 @@ const HomePage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 47</div>
+                  <div className="text-3xl font-bold text-gray-900">R$ 19,90</div>
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Listagem no bairro</li>
@@ -200,7 +200,7 @@ const HomePage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 97</div>
+                  <div className="text-3xl font-bold text-gray-900">R$ 49,90</div>
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Básico</li>
@@ -231,7 +231,7 @@ const HomePage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 197</div>
+                  <div className="text-3xl font-bold text-gray-900">R$ 79,90</div>
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Intermediário</li>
