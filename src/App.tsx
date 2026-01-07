@@ -52,7 +52,7 @@ const HomePage = () => {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="/Fundo_Meu_Bairro.png" 
+              src="./Fundo_Meu_Bairro.png" 
               alt="Background" 
               className="w-full h-full object-cover"
             />
@@ -63,7 +63,7 @@ const HomePage = () => {
             {/* Logo */}
             <div className="mb-8">
               <img 
-                src="/Logotipo_Meu_Bairro.png" 
+                src="./Logotipo_Meu_Bairro.png" 
                 alt="Meu Bairro Logo" 
                 className="w-32 h-32 mx-auto object-contain"
               />
