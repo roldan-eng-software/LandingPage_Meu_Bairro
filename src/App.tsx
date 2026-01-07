@@ -367,6 +367,45 @@ const HomePage = () => {
             </div>
           </section>
           
+          {/* Seção de Garantia */}
+          <section className="mb-16">
+            <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
+              <CardContent className="text-center py-12">
+                <div className="max-w-3xl mx-auto">
+                  <div className="text-5xl mb-6">🛡️</div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                    Comece com confiança
+                  </h3>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Você tem 30 dias para testar totalmente grátis. Se não gostar, seu dinheiro volta. Nenhuma pergunta feita.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div className="flex items-center text-green-600">
+                      <span className="text-2xl mr-2">✓</span>
+                      <span className="font-medium">30 dias garantia</span>
+                    </div>
+                    <div className="flex items-center text-green-600">
+                      <span className="text-2xl mr-2">✓</span>
+                      <span className="font-medium">Devolução 100%</span>
+                    </div>
+                    <div className="flex items-center text-green-600">
+                      <span className="text-2xl mr-2">✓</span>
+                      <span className="font-medium">Sem perguntas</span>
+                    </div>
+                  </div>
+                  <Button 
+                    size="lg" 
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6"
+                    asChild
+                    onClick={handleButtonClick}
+                  >
+                    <Link to="/sobre">Começar os 30 Dias Grátis</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>

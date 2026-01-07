@@ -119,7 +119,7 @@ Não. Nosso sistema mostra seu negócio apenas para pessoas no seu bairro e arre
 
 ### Comece com confiança
 
-Você tem 7 dias para testar totalmente grátis. Se não gostar, seu dinheiro volta. Nenhuma pergunta feita.
+Você tem 30 dias para testar totalmente grátis. Se não gostar, seu dinheiro volta. Nenhuma pergunta feita.
 
 ---
 
@@ -132,7 +132,7 @@ Você tem 7 dias para testar totalmente grátis. Se não gostar, seu dinheiro vo
 
 ✅ "Ativar Meu Comercio Agora"  
 ✅ "Aparecer Para Meus Vizinhos"  
-✅ "Começar os 7 Dias Grátis"
+✅ "Começar os 30 Dias Grátis"
 
 ---
 
