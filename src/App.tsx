@@ -106,6 +106,32 @@ const HomePage = () => {
             </div>
           </section>
           
+          {/* Seção de Reafirmação - Opção A - Com Urgência Social */}
+          <section className="mb-16">
+            <Card className="bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">
+              <CardContent className="text-center py-12">
+                <div className="max-w-3xl mx-auto">
+                  <div className="text-5xl mb-6">⚡</div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                    Seus concorrentes já estão lá. Não perca mais clientes para quem está visível.
+                  </h3>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Enquanto você hesita, outros comerciantes do seu bairro estão 
+                    atraindo seus clientes potenciais todos os dias.
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3"
+                    asChild
+                    onClick={handleButtonClick}
+                  >
+                    <Link to="/sobre">Garantir Meu Agora</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
