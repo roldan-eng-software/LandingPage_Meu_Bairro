@@ -2,7 +2,13 @@ import React from 'react';
 import './index.css';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+const queryClient = new QueryClient();
 
 const HomePage = () => (
   <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -88,13 +94,19 @@ const SobrePage = () => (
 
 const App = () => {
   return (
-    <BrowserRouter basename="/LandingPage_Meu_Bairro">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/sobre" element={<SobrePage />} />
-        <Route path="*" element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter basename="/LandingPage_Meu_Bairro">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/sobre" element={<SobrePage />} />
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
   );
 };
 
