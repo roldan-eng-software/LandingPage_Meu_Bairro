@@ -21,31 +21,32 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Meu Bairro</h1>
-          <p className="text-xl text-gray-600">Plataforma de conexão comunitária do seu bairro</p>
+        {/* Hero Section */}
+        <header className="text-center mb-16">
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">Meu Bairro</h1>
+          <p className="text-xl text-gray-600 mb-8">Plataforma de conexão comunitária do seu bairro</p>
+          
+          {/* Hero Option A - Focado em Resultados */}
+          <div className="max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Aumente suas vendas com clientes que já estão perto de você
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Descobrimos que 73% das pessoas procuram por serviços no seu próprio bairro. 
+              Não deixe esse dinheiro ir para seus concorrentes.
+            </p>
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto text-lg px-8 py-4"
+              asChild
+              onClick={handleButtonClick}
+            >
+              <Link to="/sobre">Começar Agora</Link>
+            </Button>
+          </div>
         </header>
         
         <main className="max-w-4xl mx-auto">
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="text-2xl">Bem-vindo!</CardTitle>
-              <CardDescription>
-                Conecte-se com seus vizinhos, descubra eventos locais e participe da comunidade.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto" 
-                asChild
-                onClick={handleButtonClick}
-              >
-                <Link to="/sobre">Começar Agora</Link>
-              </Button>
-            </CardContent>
-          </Card>
-          
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
