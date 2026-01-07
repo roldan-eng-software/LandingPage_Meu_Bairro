@@ -132,6 +132,92 @@ const HomePage = () => {
             </Card>
           </section>
           
+          {/* Seção de Planos */}
+          <section className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Escolha seu plano</h2>
+              <p className="text-lg text-gray-600">Comece a atrair clientes do seu bairro hoje mesmo</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Plano Básico */}
+              <Card className="text-center">
+                <CardHeader>
+                  <CardTitle className="text-xl">Plano Básico</CardTitle>
+                  <CardDescription className="text-lg font-medium text-blue-600">
+                    Perfeito para quem está começando e quer testar
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="text-3xl font-bold text-gray-900">R$ 47</div>
+                  <p className="text-gray-600">por mês</p>
+                  <ul className="text-left space-y-2 text-gray-600">
+                    <li>✓ Listagem no bairro</li>
+                    <li>✓ Até 5 fotos</li>
+                    <li>✓ Contato direto</li>
+                    <li>✓ Suporte por email</li>
+                  </ul>
+                  <Button variant="outline" className="w-full">
+                    Começar Teste
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              {/* Plano Intermediário - DESTAQUE */}
+              <Card className="text-center border-2 border-blue-500 relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                    O mais escolhido
+                  </span>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">Plano Intermediário</CardTitle>
+                  <CardDescription className="text-lg font-medium text-blue-600">
+                    Ideal para crescer rápido
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="text-3xl font-bold text-gray-900">R$ 97</div>
+                  <p className="text-gray-600">por mês</p>
+                  <ul className="text-left space-y-2 text-gray-600">
+                    <li>✓ Tudo do Básico</li>
+                    <li>✓ Fotos ilimitadas</li>
+                    <li>✓ Destaque em busca</li>
+                    <li>✓ Estatísticas simples</li>
+                    <li>✓ Suporte prioritário</li>
+                  </ul>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Escolher Este Plano
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              {/* Plano Premium */}
+              <Card className="text-center">
+                <CardHeader>
+                  <CardTitle className="text-xl">Plano Premium</CardTitle>
+                  <CardDescription className="text-lg font-medium text-blue-600">
+                    Para quem quer dominar o bairro
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="text-3xl font-bold text-gray-900">R$ 197</div>
+                  <p className="text-gray-600">por mês</p>
+                  <ul className="text-left space-y-2 text-gray-600">
+                    <li>✓ Tudo do Intermediário</li>
+                    <li>✓ Posicionamento premium</li>
+                    <li>✓ Análises avançadas</li>
+                    <li>✓ Gerente dedicado</li>
+                    <li>✓ Sem concorrentes próximos</li>
+                  </ul>
+                  <Button variant="outline" className="w-full">
+                    Falar com Consultor
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
