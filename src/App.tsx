@@ -130,20 +130,6 @@ const HomePage = () => {
                     Enquanto você hesita, outros comerciantes do seu bairro estão 
                     atraindo seus clientes potenciais todos os dias.
                   </p>
-                  <Button 
-                    size="lg" 
-                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                    onClick={handleButtonClick}
-                  >
-                    <a 
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white no-underline"
-                    >
-                      Garantir Meu Agora
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>
