@@ -235,8 +235,7 @@ const HomePage = () => {
                   <p className="text-gray-600">por mês</p>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Intermediário</li>
-                    <li>✓ Posicionamento premium</li>
-                    <li>✓ Análises avançadas</li>
+                    <li>✓ Página da internet grátis (LandingPage)</li>
                     <li>✓ Gerente dedicado</li>
                     <li>✓ Sem concorrentes próximos</li>
                   </ul>
