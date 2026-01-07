@@ -49,6 +49,15 @@ const HomePage = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <header className="text-center mb-16">
+          {/* Logo */}
+          <div className="mb-8">
+            <img 
+              src="/Logotipo_Meu_Bairro.png" 
+              alt="Meu Bairro Logo" 
+              className="w-32 h-32 mx-auto object-contain"
+            />
+          </div>
+          
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Meu Bairro</h1>
           <p className="text-xl text-gray-600 mb-8">Plataforma de conexão comunitária do seu bairro</p>
           
