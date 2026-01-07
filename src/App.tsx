@@ -255,7 +255,7 @@ const HomePage = () => {
                       <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                     </div>
                     <blockquote className="text-gray-700 italic mb-4">
-                      "Contratar o Meu Bairro foi a melhor decisão que tomei. No mês passado, tive 40 clientes novos do bairro. Agora não consigo nem acompanhar."
+                      "Contratar o Meu Bairro foi a melhor decisão que tomei."
                     </blockquote>
                   </div>
                   <div className="flex items-center">
@@ -301,7 +301,7 @@ const HomePage = () => {
                       <span className="text-2xl">⭐⭐⭐⭐⭐</span>
                     </div>
                     <blockquote className="text-gray-700 italic mb-4">
-                      "Testei por 7 dias e no primeiro mês já tinha recuperado o investimento com novos clientes."
+                      "Testei por 14 dias o plano Intermediário e no segundo mês já tinha recuperado o investimento com novos clientes."
                     </blockquote>
                   </div>
                   <div className="flex items-center">
@@ -381,7 +381,7 @@ const HomePage = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700">
-                    Não. Nosso sistema mostra seu negócio apenas para pessoas no seu bairro e arredores. Zero desperdício.
+                    Não. Nosso sistema mostra seu negócio apenas para pessoas no seu bairro ou no Plano Premium para outros bairros da sua escolha. Zero desperdício.
                   </p>
                 </CardContent>
               </Card>
