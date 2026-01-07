@@ -1,31 +1,12 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import { useGoogleAnalytics } from "./hooks/useGoogleAnalytics";
-
-const queryClient = new QueryClient();
+import React from 'react';
 
 const App = () => {
-  const { trackEvent } = useGoogleAnalytics();
-
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter basename="/LandingPage_Meu_Bairro">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <h1>Meu Bairro</h1>
+      <p>Plataforma de conexão comunitária do seu bairro</p>
+      <p>Teste de deploy no GitHub Pages</p>
+    </div>
   );
 };
 
