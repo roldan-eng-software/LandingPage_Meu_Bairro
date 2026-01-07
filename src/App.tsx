@@ -19,9 +19,18 @@ const HomePage = () => {
   };
 
   const whatsappNumber = '16981442301';
-  const whatsappMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const platformUrl = 'https://micro-saa-s-meu-bairro.vercel.app/';
+  
+  // Mensagens personalizadas para cada plano
+  const basicPlanMessage = 'Olá! Quero adquirir o Plano Básico por R$ 19,90. Me envie mais informações?';
+  const intermediatePlanMessage = 'Olá! Quero adquirir o Plano Intermediario por R$ 49,90 com 14 dias gratis para testar. Me envie mais informações?';
+  const premiumPlanMessage = 'Olá! Quero adquirir o Plano Premium por R$ 99,90 com uma Super Pagina da Internet grátis. Me envie mais informações?';
+  
+  const basicPlanUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(basicPlanMessage)}`;
+  const intermediatePlanUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(intermediatePlanMessage)}`;
+  const premiumPlanUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(premiumPlanMessage)}`;
+  const finalPlanMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
+  const finalPlanUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(finalPlanMessage)}`;
   
   // Scroll to intermediate plan
   const scrollToIntermediatePlan = () => {
@@ -170,7 +179,7 @@ const HomePage = () => {
                   </ul>
                   <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
-                      href={whatsappUrl}
+                      href={basicPlanUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 no-underline"
@@ -206,7 +215,7 @@ const HomePage = () => {
                   </ul>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     <a 
-                      href={whatsappUrl}
+                      href={intermediatePlanUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white no-underline"
@@ -235,7 +244,7 @@ const HomePage = () => {
                   </ul>
                   <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
-                      href={whatsappUrl}
+                      href={premiumPlanUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-700 no-underline"
@@ -407,12 +416,12 @@ const HomePage = () => {
                     Comece com confiança
                   </h3>
                   <p className="text-lg text-gray-600 mb-6">
-                    Você tem 30 dias para testar totalmente grátis.
+                    Você tem 14 dias para testar totalmente grátis.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <div className="flex items-center text-green-600">
                       <span className="text-2xl mr-2">✓</span>
-                      <span className="font-medium">30 dias garantia</span>
+                      <span className="font-medium">14 dias garantia</span>
                     </div>
                     <div className="flex items-center text-green-600">
                       <span className="text-2xl mr-2">✓</span>
@@ -478,12 +487,12 @@ const HomePage = () => {
                 <CardHeader>
                   <div className="text-4xl mb-4">📊</div>
                   <CardTitle className="text-xl">
-                    Você vê em tempo real quem está olhando para você
+                    Nós gerenciamos como está a sua pontuação diante das pesquisas.
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Sabe exatamente quantas pessoas viram seu anúncio, de qual bairro vêm e o que clicaram.
+                    O sistema é honesto, não fica manipulando resultados.
                   </p>
                 </CardContent>
               </Card>
@@ -511,7 +520,7 @@ const HomePage = () => {
                     onClick={handleButtonClick}
                   >
                     <a 
-                      href={whatsappUrl}
+                      href={finalPlanUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-indigo-600 no-underline"
@@ -520,7 +529,7 @@ const HomePage = () => {
                     </a>
                   </Button>
                   <p className="text-sm mt-6 opacity-90">
-                    Última chance: 30 dias grátis termina em breve
+                    Última chance: 14 dias grátis termina em breve
                   </p>
                 </div>
               </CardContent>
