@@ -21,6 +21,10 @@ const HomePage = () => {
   const whatsappNumber = '16981442301';
   const platformUrl = 'https://micro-saa-s-meu-bairro.vercel.app/';
   
+  // Import assets dinamicamente
+  const logoImage = './Logotipo_Meu_Bairro.png';
+  const backgroundImage = './Fundo_Meu_Bairro.png';
+  
   // Mensagens personalizadas para cada plano
   const basicPlanMessage = 'Olá! Quero adquirir o Plano Básico por R$ 19,90. Me envie mais informações?';
   const intermediatePlanMessage = 'Olá! Quero adquirir o Plano Intermediario por R$ 49,90 com 14 dias gratis para testar. Me envie mais informações?';
@@ -52,9 +56,13 @@ const HomePage = () => {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="./Fundo_Meu_Bairro.png" 
+              src={backgroundImage} 
               alt="Background" 
               className="w-full h-full object-cover"
+              onError={(e) => {
+                console.error('Background failed to load:', backgroundImage);
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
             />
           </div>
           
@@ -63,9 +71,13 @@ const HomePage = () => {
             {/* Logo */}
             <div className="mb-8">
               <img 
-                src="./Logotipo_Meu_Bairro.png" 
+                src={logoImage} 
                 alt="Meu Bairro Logo" 
                 className="w-32 h-32 mx-auto object-contain"
+                onError={(e) => {
+                  console.error('Logo failed to load:', logoImage);
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
               />
             </div>
             
