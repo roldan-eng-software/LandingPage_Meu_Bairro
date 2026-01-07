@@ -218,6 +218,85 @@ const HomePage = () => {
             </div>
           </section>
           
+          {/* Seção de Prova Social - Depoimentos */}
+          <section className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Veja quem já está crescendo</h2>
+              <p className="text-lg text-gray-600">Comerciantes como você estão transformando seus negócios</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Depoimento 1 */}
+              <Card className="bg-blue-50 border-blue-200">
+                <CardContent className="p-6">
+                  <div className="mb-4">
+                    <div className="flex text-blue-500 mb-3">
+                      <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <blockquote className="text-gray-700 italic mb-4">
+                      "Contratar o Meu Bairro foi a melhor decisão que tomei. No mês passado, tive 40 clientes novos do bairro. Agora não consigo nem acompanhar."
+                    </blockquote>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                      JS
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-800">João Silva</div>
+                      <div className="text-sm text-gray-600">Padaria do Centro</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Depoimento 2 */}
+              <Card className="bg-green-50 border-green-200">
+                <CardContent className="p-6">
+                  <div className="mb-4">
+                    <div className="flex text-green-500 mb-3">
+                      <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <blockquote className="text-gray-700 italic mb-4">
+                      "Não sabia como aparecer no Google Maps. Aqui foi fácil e barato. Meu telefone não para de tocar."
+                    </blockquote>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                      MS
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-800">Maria Santos</div>
+                      <div className="text-sm text-gray-600">Salão de Beleza</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Depoimento 3 */}
+              <Card className="bg-purple-50 border-purple-200">
+                <CardContent className="p-6">
+                  <div className="mb-4">
+                    <div className="flex text-purple-500 mb-3">
+                      <span className="text-2xl">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <blockquote className="text-gray-700 italic mb-4">
+                      "Testei por 7 dias e no primeiro mês já tinha recuperado o investimento com novos clientes."
+                    </blockquote>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                      PC
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-800">Pedro Costa</div>
+                      <div className="text-sm text-gray-600">Mecânico</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
