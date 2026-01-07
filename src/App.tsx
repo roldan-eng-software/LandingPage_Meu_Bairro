@@ -46,7 +46,67 @@ const HomePage = () => {
           </div>
         </header>
         
-        <main className="max-w-4xl mx-auto">
+        <main className="max-w-6xl mx-auto">
+          {/* Seção de Problema e Solução */}
+          <section className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Por que comerciantes estão trocando para o Meu Bairro?
+              </h2>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Problema 1 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">🎯</div>
+                  <CardTitle className="text-xl">
+                    Você aparece para quem realmente pode comprar de você
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Seus clientes ideais estão no seu bairro, ao lado do seu comércio. 
+                    Não gaste dinheiro alcançando quem mora longe demais.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* Problema 2 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">⏰</div>
+                  <CardTitle className="text-xl">
+                    Você não precisa ser especialista em redes sociais
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Diferente do Instagram e Facebook, aqui você não compete por atenção. 
+                    Os moradores estão buscando justamente o seu tipo de serviço, neste exato local.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* Problema 3 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">💰</div>
+                  <CardTitle className="text-xl">
+                    Você paga apenas pelos clientes que você quer
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Sem surpresas. Sem cobranças extras. Você sabe exatamente quanto vai 
+                    investir em cada plano.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+          
+          {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
