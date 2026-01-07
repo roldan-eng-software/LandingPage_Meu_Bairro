@@ -22,6 +22,15 @@ const HomePage = () => {
   const whatsappMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const platformUrl = 'https://micro-saa-s-meu-bairro.vercel.app/';
+  
+  // Scroll to intermediate plan
+  const scrollToIntermediatePlan = () => {
+    trackEvent('click', 'navigation', 'intermediate_plan_button');
+    const element = document.getElementById('intermediate-plan');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -173,7 +182,7 @@ const HomePage = () => {
               </Card>
               
               {/* Plano Intermediário - DESTAQUE */}
-              <Card className="text-center border-2 border-blue-500 relative transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-blue-600">
+              <Card id="intermediate-plan" className="text-center border-2 border-blue-500 relative transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-blue-600">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                     O mais escolhido
@@ -417,16 +426,9 @@ const HomePage = () => {
                   <Button 
                     size="lg" 
                     className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6 text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                    onClick={handleButtonClick}
+                    onClick={scrollToIntermediatePlan}
                   >
-                    <a 
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white no-underline"
-                    >
-                      Ativar Meu Comércio Agora
-                    </a>
+                    Escolher Meu Plano Agora
                   </Button>
                 </div>
               </CardContent>
