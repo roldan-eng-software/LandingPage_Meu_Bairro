@@ -18,6 +18,10 @@ const HomePage = () => {
     trackEvent('click', 'navigation', 'start_button');
   };
 
+  const whatsappNumber = '16981442301';
+  const whatsappMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
@@ -38,10 +42,16 @@ const HomePage = () => {
             <Button 
               size="lg" 
               className="w-full sm:w-auto text-lg px-8 py-4"
-              asChild
               onClick={handleButtonClick}
             >
-              <Link to="/sobre">Começar Agora</Link>
+              <a 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white no-underline"
+              >
+                Começar Agora
+              </a>
             </Button>
           </div>
         </header>
@@ -122,10 +132,16 @@ const HomePage = () => {
                   <Button 
                     size="lg" 
                     className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3"
-                    asChild
                     onClick={handleButtonClick}
                   >
-                    <Link to="/sobre">Garantir Meu Agora</Link>
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white no-underline"
+                    >
+                      Garantir Meu Agora
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -158,7 +174,14 @@ const HomePage = () => {
                     <li>✓ Suporte por email</li>
                   </ul>
                   <Button variant="outline" className="w-full">
-                    Começar Teste
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 no-underline"
+                    >
+                      Começar Teste
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -187,7 +210,14 @@ const HomePage = () => {
                     <li>✓ Suporte prioritário</li>
                   </ul>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                    Escolher Este Plano
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white no-underline"
+                    >
+                      Escolher Este Plano
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -211,7 +241,14 @@ const HomePage = () => {
                     <li>✓ Sem concorrentes próximos</li>
                   </ul>
                   <Button variant="outline" className="w-full">
-                    Falar com Consultor
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 no-underline"
+                    >
+                      Falar com Consultor
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -396,10 +433,16 @@ const HomePage = () => {
                   <Button 
                     size="lg" 
                     className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6 text-lg font-semibold"
-                    asChild
                     onClick={handleButtonClick}
                   >
-                    <Link to="/sobre">Ativar Meu Comércio Agora</Link>
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white no-underline"
+                    >
+                      Ativar Meu Comércio Agora
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -479,10 +522,16 @@ const HomePage = () => {
                   <Button 
                     size="lg" 
                     className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 text-lg font-semibold"
-                    asChild
                     onClick={handleButtonClick}
                   >
-                    <Link to="/sobre">Aparecer Para Meus Vizinhos Agora</Link>
+                    <a 
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-600 no-underline"
+                    >
+                      Aparecer Para Meus Vizinhos Agora
+                    </a>
                   </Button>
                   <p className="text-sm mt-6 opacity-90">
                     Última chance: 30 dias grátis termina em breve
