@@ -21,6 +21,7 @@ const HomePage = () => {
   const whatsappNumber = '16981442301';
   const whatsappMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const platformUrl = 'https://micro-saa-s-meu-bairro.vercel.app/';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -45,12 +46,12 @@ const HomePage = () => {
               onClick={handleButtonClick}
             >
               <a 
-                href={whatsappUrl}
+                href={platformUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white no-underline"
               >
-                Começar Agora
+                Conheça a Plataforma
               </a>
             </Button>
           </div>
