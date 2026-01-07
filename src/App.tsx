@@ -377,7 +377,7 @@ const HomePage = () => {
                     Comece com confiança
                   </h3>
                   <p className="text-lg text-gray-600 mb-6">
-                    Você tem 30 dias para testar totalmente grátis. Se não gostar, seu dinheiro volta. Nenhuma pergunta feita.
+                    Você tem 30 dias para testar totalmente grátis.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <div className="flex items-center text-green-600">
@@ -395,11 +395,11 @@ const HomePage = () => {
                   </div>
                   <Button 
                     size="lg" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6 text-lg font-semibold"
                     asChild
                     onClick={handleButtonClick}
                   >
-                    <Link to="/sobre">Começar os 30 Dias Grátis</Link>
+                    <Link to="/sobre">Ativar Meu Comércio Agora</Link>
                   </Button>
                 </div>
               </CardContent>
