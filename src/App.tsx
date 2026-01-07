@@ -152,13 +152,12 @@ const HomePage = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 19,90</div>
-                  <p className="text-gray-600">por mês</p>
+                  <div className="text-3xl font-bold text-gray-900">R$ 19,90/mês</div>
                   <ul className="text-left space-y-2 text-gray-600">
-                    <li>✓ Listagem no bairro</li>
-                    <li>✓ 1 foto</li>
-                    <li>✓ Contato direto</li>
-                    <li>✓ Suporte por email</li>
+                    <li>✓ Listagem no seu bairro</li>
+                    <li>✓ 01 Foto de seu trabalho ou estabelecimento</li>
+                    <li>✓ Redes sociais no card</li>
+                    <li>✓ Botão de chamada direta no seu Whatsapp</li>
                   </ul>
                   <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
@@ -183,19 +182,18 @@ const HomePage = () => {
                 <CardHeader>
                   <CardTitle className="text-xl">Plano Intermediário</CardTitle>
                   <CardDescription className="text-lg font-medium text-blue-600">
-                    Ideal para crescer rápido
+                    Ideal para quem quer ser visto no bairro
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 49,90</div>
-                  <p className="text-gray-600">por mês</p>
+                  <div className="text-3xl font-bold text-gray-900">R$ 49,90/mês</div>
+                  <p className="text-sm text-green-600 font-medium">14 dias GRÁTIS para testar</p>
                   <ul className="text-left space-y-2 text-gray-600">
-                    <li>✓ Tudo do Básico</li>
-                    <li>✓ 3 fotos</li>
-                    <li>✓ Destaque em buscas</li>
-                    <li>✓ Estatísticas simples</li>
+                    <li>✓ Listagem de destaque do bairro (Fica no Topo das pesquisas)</li>
+                    <li>✓ 03 fotos do seu trabalho ou estabelecimento</li>
+                    <li>✓ Redes sociais no card</li>
+                    <li>✓ Botão de chamada direta no seu Whatsapp</li>
                     <li>✓ Suporte prioritário</li>
-                    <li>✓ 30 dias Grátis</li>
                   </ul>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     <a 
@@ -215,18 +213,16 @@ const HomePage = () => {
                 <CardHeader>
                   <CardTitle className="text-xl">Plano Premium</CardTitle>
                   <CardDescription className="text-lg font-medium text-blue-600">
-                    Para quem quer dominar o bairro
+                    Para ser visto em outros bairros também
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="text-3xl font-bold text-gray-900">R$ 89,90</div>
-                  <p className="text-gray-600">por mês</p>
+                  <div className="text-3xl font-bold text-gray-900">R$ 99,90/mês</div>
                   <ul className="text-left space-y-2 text-gray-600">
                     <li>✓ Tudo do Intermediário</li>
-                    <li>✓ 5 Fotos</li>
-                    <li>✓ Página da internet grátis (LandingPage)</li>
-                    <li>✓ Gerente dedicado</li>
-                    <li>✓ Sem concorrentes próximos</li>
+                    <li>✓ 05 Fotos do seu trabalho ou estabelecimento</li>
+                    <li>✓ 01 Página de internet simples com domínio gratuito</li>
+                    <li className="text-sm text-gray-500 italic">(Caso deseje uma página de internet com domínio próprio, temos planos para você também)</li>
                   </ul>
                   <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
