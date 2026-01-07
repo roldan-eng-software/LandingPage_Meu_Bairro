@@ -32,6 +32,9 @@ const HomePage = () => {
   const finalPlanMessage = 'Olá! Quero saber mais sobre o Meu Bairro para aparecer para meus vizinhos.';
   const finalPlanUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(finalPlanMessage)}`;
   
+  const questionMessage = 'Olá! Minha pergunta é...';
+  const questionUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(questionMessage)}`;
+  
   // Scroll to intermediate plan
   const scrollToIntermediatePlan = () => {
     trackEvent('click', 'navigation', 'intermediate_plan_button');
@@ -520,12 +523,12 @@ const HomePage = () => {
                     onClick={handleButtonClick}
                   >
                     <a 
-                      href={finalPlanUrl}
+                      href={questionUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-indigo-600 no-underline"
                     >
-                      Aparecer Para Meus Vizinhos Agora
+                      Tenho uma Pergunta
                     </a>
                   </Button>
                   <p className="text-sm mt-6 opacity-90">
