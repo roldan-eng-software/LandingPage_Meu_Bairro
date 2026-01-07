@@ -297,6 +297,76 @@ const HomePage = () => {
             </div>
           </section>
           
+          {/* Seção de Objeções Antecipadas - FAQ Reformulado */}
+          <section className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Respostas Rápidas para Você Começar</h2>
+              <p className="text-lg text-gray-600">Tudo que você precisa saber antes de decidir</p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto space-y-6">
+              {/* FAQ 1 */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center">
+                    <span className="text-blue-500 mr-3">⏰</span>
+                    Quanto tempo leva para aparecer?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">
+                    Seus primeiros clientes podem chegar em horas. Geralmente em 24-48 horas já há visitantes na sua página.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* FAQ 2 */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center">
+                    <span className="text-green-500 mr-3">🏪</span>
+                    Funciona mesmo para pequenos negócios?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">
+                    Sim! Especialmente para pequenos negócios. Quanto mais especializado o seu serviço, mais nosso sistema te ajuda a aparecer para quem está procurando.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* FAQ 3 */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center">
+                    <span className="text-purple-500 mr-3">🔓</span>
+                    Posso parar quando quiser?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">
+                    Sem contrato. Sem multa. Você é livre para cancelar a qualquer momento.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* FAQ 4 */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center">
+                    <span className="text-orange-500 mr-3">📍</span>
+                    Vou aparecer para quem está muito longe?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">
+                    Não. Nosso sistema mostra seu negócio apenas para pessoas no seu bairro e arredores. Zero desperdício.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
