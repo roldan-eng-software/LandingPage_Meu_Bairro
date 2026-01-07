@@ -50,7 +50,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <header className="text-center mb-16 relative">
           {/* Background Image */}
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-25">
             <img 
               src="./Fundo_Meu_Bairro.png" 
               alt="Background" 
