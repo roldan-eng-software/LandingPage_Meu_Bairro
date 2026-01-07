@@ -144,7 +144,7 @@ const HomePage = () => {
             
             <div className="grid md:grid-cols-3 gap-8">
               {/* Plano Básico */}
-              <Card className="text-center">
+              <Card className="text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-blue-300">
                 <CardHeader>
                   <CardTitle className="text-xl">Plano Básico</CardTitle>
                   <CardDescription className="text-lg font-medium text-blue-600">
@@ -174,7 +174,7 @@ const HomePage = () => {
               </Card>
               
               {/* Plano Intermediário - DESTAQUE */}
-              <Card className="text-center border-2 border-blue-500 relative">
+              <Card className="text-center border-2 border-blue-500 relative transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-blue-600">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                     O mais escolhido
@@ -211,7 +211,7 @@ const HomePage = () => {
               </Card>
               
               {/* Plano Premium */}
-              <Card className="text-center">
+              <Card className="text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-blue-300">
                 <CardHeader>
                   <CardTitle className="text-xl">Plano Premium</CardTitle>
                   <CardDescription className="text-lg font-medium text-blue-600">
