@@ -42,7 +42,7 @@ const HomePage = () => {
             </p>
             <Button 
               size="lg" 
-              className="w-full sm:w-auto text-lg px-8 py-4"
+              className="w-full sm:w-auto text-lg px-8 py-4 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               onClick={handleButtonClick}
             >
               <a 
@@ -132,7 +132,7 @@ const HomePage = () => {
                   </p>
                   <Button 
                     size="lg" 
-                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3"
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                     onClick={handleButtonClick}
                   >
                     <a 
@@ -174,7 +174,7 @@ const HomePage = () => {
                     <li>✓ Contato direto</li>
                     <li>✓ Suporte por email</li>
                   </ul>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
                       href={whatsappUrl}
                       target="_blank"
@@ -211,7 +211,7 @@ const HomePage = () => {
                     <li>✓ Suporte prioritário</li>
                     <li>✓ 30 dias Grátis</li>
                   </ul>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     <a 
                       href={whatsappUrl}
                       target="_blank"
@@ -242,7 +242,7 @@ const HomePage = () => {
                     <li>✓ Gerente dedicado</li>
                     <li>✓ Sem concorrentes próximos</li>
                   </ul>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600">
                     <a 
                       href={whatsappUrl}
                       target="_blank"
@@ -434,7 +434,7 @@ const HomePage = () => {
                   </div>
                   <Button 
                     size="lg" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6 text-lg font-semibold"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 mt-6 text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                     onClick={handleButtonClick}
                   >
                     <a 
@@ -523,7 +523,7 @@ const HomePage = () => {
                   </p>
                   <Button 
                     size="lg" 
-                    className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 text-lg font-semibold"
+                    className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                     onClick={handleButtonClick}
                   >
                     <a 
