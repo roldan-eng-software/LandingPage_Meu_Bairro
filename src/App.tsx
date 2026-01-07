@@ -48,18 +48,29 @@ const HomePage = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <header className="text-center mb-16">
-          {/* Logo */}
-          <div className="mb-8">
+        <header className="text-center mb-16 relative">
+          {/* Background Image */}
+          <div className="absolute inset-0 opacity-10">
             <img 
-              src="/Logotipo_Meu_Bairro.png" 
-              alt="Meu Bairro Logo" 
-              className="w-32 h-32 mx-auto object-contain"
+              src="/Fundo_Meu_Bairro.png" 
+              alt="Background" 
+              className="w-full h-full object-cover"
             />
           </div>
           
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Meu Bairro</h1>
-          <p className="text-xl text-gray-600 mb-8">Plataforma de conexão comunitária do seu bairro</p>
+          {/* Content */}
+          <div className="relative z-10">
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/Logotipo_Meu_Bairro.png" 
+                alt="Meu Bairro Logo" 
+                className="w-32 h-32 mx-auto object-contain"
+              />
+            </div>
+            
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">Meu Bairro</h1>
+            <p className="text-xl text-gray-600 mb-8">Plataforma de conexão comunitária do seu bairro</p>
           
           {/* Hero Option A - Focado em Resultados */}
           <div className="max-w-3xl mx-auto mb-12">
@@ -84,6 +95,7 @@ const HomePage = () => {
                 Conheça a Plataforma
               </a>
             </Button>
+          </div>
           </div>
         </header>
         
