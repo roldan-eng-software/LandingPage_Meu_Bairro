@@ -406,6 +406,61 @@ const HomePage = () => {
             </Card>
           </section>
           
+          {/* Seção 9 - Diferenciais - Por Que Escolher Você */}
+          <section className="mb-16">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">Por que escolher o Meu Bairro?</h2>
+              <p className="text-lg text-gray-600">Diferenciais que fazem toda a diferença</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Diferencial 1 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">👥</div>
+                  <CardTitle className="text-xl">
+                    Você tem suporte local, não um bot
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Qualquer dúvida, você liga e fala com uma pessoa. Não é um chatbot.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* Diferencial 2 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">🔍</div>
+                  <CardTitle className="text-xl">
+                    Seu concorrente não sabe que você está aqui
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Você não depende do algoritmo do Facebook. Aqui, quem busca te encontra naturalmente.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* Diferencial 3 */}
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="text-4xl mb-4">📊</div>
+                  <CardTitle className="text-xl">
+                    Você vê em tempo real quem está olhando para você
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Sabe exatamente quantas pessoas viram seu anúncio, de qual bairro vêm e o que clicaram.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+          
           {/* Cards de funcionalidades originais */}
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
