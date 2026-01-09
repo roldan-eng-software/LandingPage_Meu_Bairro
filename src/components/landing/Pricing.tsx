@@ -1,25 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import { useEffect, useState } from "react";
-
-const BlinkingText = ({ children }: { children: React.ReactNode }) => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(prev => !prev);
-    }, 800);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <span className={`inline-block ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}>
-      {children}
-    </span>
-  );
-};
 
 const plans = [
   {
@@ -114,11 +95,9 @@ const Pricing = () => {
               <div className="px-6 pb-4">
                 <div className="border-2 border-red-500 rounded p-2 bg-red-50">
                   <p className="text-center">
-                    <BlinkingText>
-                      <span className="text-red-600 font-bold text-sm">
-                        30 dias grátis para experimentar!
-                      </span>
-                    </BlinkingText>
+                    <span className="text-red-600 font-bold text-sm">
+                      30 dias grátis para experimentar!
+                    </span>
                   </p>
                 </div>
               </div>
