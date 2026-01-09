@@ -15,7 +15,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -35,6 +35,13 @@ jobs:
       
     - name: Build
       run: npm run build
+      
+    - name: Verify build output
+      run: |
+        echo "Checking docs directory..."
+        ls -la docs/
+        echo "Checking if index.html exists..."
+        test -f docs/index.html && echo "✓ index.html found" || echo "✗ index.html not found"
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
