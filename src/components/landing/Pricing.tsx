@@ -1,11 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const BlinkingText = ({ children }: { children: React.ReactNode }) => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(prev => !prev);
+    }, 800);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <span className={`inline-block ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}>
+      {children}
+    </span>
+  );
+};
 
 const plans = [
   {
     name: "Básico",
-    price: "29",
+    price: "9,90",
     description: "Perfeito para quem está começando e quer testar",
     features: [
       "Cadastro completo do negócio",
@@ -18,8 +37,8 @@ const plans = [
     popular: false
   },
   {
-    name: "Destaque",
-    price: "59",
+    name: "Intermediario",
+    price: "39,90",
     description: "O mais escolhido - Melhor custo-benefício",
     features: [
       "Tudo do plano Básico",
@@ -33,10 +52,10 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "99",
+    price: "99,90",
     description: "Para quem quer dominar o bairro",
     features: [
-      "Tudo do plano Destaque",
+      "Tudo do plano Intermediario",
       "Banner exclusivo na home",
       "Até 10 fotos + vídeo",
       "Selo de verificado",
@@ -92,6 +111,18 @@ const Pricing = () => {
                 </div>
               </CardHeader>
               
+              <div className="px-6 pb-4">
+                <div className="border-2 border-red-500 rounded p-2 bg-red-50">
+                  <p className="text-center">
+                    <BlinkingText>
+                      <span className="text-red-600 font-bold text-sm">
+                        30 dias grátis para experimentar!
+                      </span>
+                    </BlinkingText>
+                  </p>
+                </div>
+              </div>
+              
               <CardContent className="pt-4">
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, featureIndex) => (
@@ -112,6 +143,12 @@ const Pricing = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <p className="text-black font-bold text-lg">
+            Para cadastro não precisa de cartão de crédito. É gratis de verdade!!!
+          </p>
         </div>
       </div>
     </section>
