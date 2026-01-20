@@ -652,7 +652,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/LandingPage_Meu_Bairro">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/sobre" element={<SobrePage />} />

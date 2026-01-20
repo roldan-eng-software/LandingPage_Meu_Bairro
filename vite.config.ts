@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'docs',
     assetsDir: 'assets',
-    sourcemap: true,
+    sourcemap: mode !== 'production',
   },
   plugins: [react()],
   resolve: {
